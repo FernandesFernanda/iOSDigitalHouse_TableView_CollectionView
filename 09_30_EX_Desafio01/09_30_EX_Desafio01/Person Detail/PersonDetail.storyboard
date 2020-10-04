@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vX0-gw-88Z">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Person Detail View Controller-->
+        <scene sceneID="VeH-yN-T8f">
+            <objects>
+                <viewController id="vX0-gw-88Z" customClass="PersonDetailViewController" customModule="_9_30_EX_Desafio01" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JLW-tA-eL0">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0v4-u7-X5Z">
+                                <rect key="frame" x="20" y="104" width="374" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nHK-pm-sZ9">
+                                <rect key="frame" x="150" y="202" width="114" height="30"/>
+                                <color key="backgroundColor" red="0.27741655710000002" green="0.53521770239999999" blue="0.7400482893" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Fechar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCloseWasPressed:" destination="vX0-gw-88Z" eventType="touchUpInside" id="06M-92-5Ti"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="nHK-pm-sZ9" firstAttribute="top" secondItem="0v4-u7-X5Z" secondAttribute="bottom" constant="50" id="0ap-dV-6Tv"/>
+                            <constraint firstItem="0v4-u7-X5Z" firstAttribute="leading" secondItem="5g9-Ru-9Bo" secondAttribute="leading" constant="20" id="CuE-rV-GAg"/>
+                            <constraint firstItem="0v4-u7-X5Z" firstAttribute="top" secondItem="5g9-Ru-9Bo" secondAttribute="top" constant="60" id="iFv-dZ-SGV"/>
+                            <constraint firstItem="5g9-Ru-9Bo" firstAttribute="trailing" secondItem="0v4-u7-X5Z" secondAttribute="trailing" constant="20" id="kEc-SS-8tl"/>
+                            <constraint firstItem="nHK-pm-sZ9" firstAttribute="leading" secondItem="5g9-Ru-9Bo" secondAttribute="leading" constant="150" id="v7l-D0-pty"/>
+                            <constraint firstItem="5g9-Ru-9Bo" firstAttribute="trailing" secondItem="nHK-pm-sZ9" secondAttribute="trailing" constant="150" id="vEX-JL-3Ai"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="5g9-Ru-9Bo"/>
+                    </view>
+                    <connections>
+                        <outlet property="personNameLabel" destination="0v4-u7-X5Z" id="Cls-0J-cdS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9dG-JG-cX5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="69.565217391304358" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

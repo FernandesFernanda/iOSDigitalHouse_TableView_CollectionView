@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="A2H-X5-iFS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--AnimalDetailViewController-->
+        <scene sceneID="JmX-Jj-fRg">
+            <objects>
+                <viewController title="AnimalDetailViewController" id="A2H-X5-iFS" customClass="AnimalDetailViewController" customModule="_9_30_EX_Desafio02" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0lv-1N-Hyn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wEI-ku-rkr">
+                                <rect key="frame" x="16" y="94" width="382" height="48"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qUf-Wg-hnf">
+                                <rect key="frame" x="150" y="192" width="114" height="33"/>
+                                <color key="backgroundColor" red="1" green="0.57838192669999999" blue="0.62727786050000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Fechar">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="buttonCloseWasPressed:" destination="A2H-X5-iFS" eventType="touchUpInside" id="Yjb-B2-4Rb"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="qUf-Wg-hnf" firstAttribute="top" secondItem="wEI-ku-rkr" secondAttribute="bottom" constant="50" id="23K-Qx-mg9"/>
+                            <constraint firstItem="qUf-Wg-hnf" firstAttribute="leading" secondItem="aWu-jM-YHi" secondAttribute="leading" constant="150" id="Joq-5S-Tm4"/>
+                            <constraint firstItem="aWu-jM-YHi" firstAttribute="trailing" secondItem="wEI-ku-rkr" secondAttribute="trailing" constant="16" id="WQU-yM-nB9"/>
+                            <constraint firstItem="wEI-ku-rkr" firstAttribute="leading" secondItem="aWu-jM-YHi" secondAttribute="leading" constant="16" id="gan-9z-i1s"/>
+                            <constraint firstItem="aWu-jM-YHi" firstAttribute="trailing" secondItem="qUf-Wg-hnf" secondAttribute="trailing" constant="150" id="hmv-Ra-w9w"/>
+                            <constraint firstItem="wEI-ku-rkr" firstAttribute="top" secondItem="aWu-jM-YHi" secondAttribute="top" constant="50" id="kpY-vt-mRB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="aWu-jM-YHi"/>
+                    </view>
+                    <connections>
+                        <outlet property="animalNameLabel" destination="wEI-ku-rkr" id="9XL-O0-LUX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Uy-pA-p1o" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="125"/>
+        </scene>
+    </scenes>
+</document>
